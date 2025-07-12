@@ -8,7 +8,7 @@ class Link(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(unique=True, blank=True)
     clicks = models.PositiveIntegerField(default=0)
-
+ 
     def __str__(self):
         return f"{self.original_url} -> {self.short_url}"
     
@@ -18,5 +18,5 @@ class Link(models.Model):
     
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.short_url)
+            self.slug = slugify('pha.'+self.short_url)
         super().save(*args, **kwargs)
