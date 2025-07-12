@@ -31,8 +31,8 @@ A simple, clean Django-based URL shortener app where users can shorten long URLs
 
 ## 📸 Screenshots
 
-![Home Page](screenshots/home.png)
-![Create Link Page](screenshots/create.png)
+![Home Page](screenshots/image_1.png)
+![Create Link Page](screenshots/image.png)
 
 ---
 
